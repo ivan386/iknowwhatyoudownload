@@ -1,0 +1,13 @@
+{ 
+  "manifest_version": 2,
+  "name": "BtDigg links for iknowwhatyoudownload.com",
+  "description": "BtDigg magnet link search by file name from iknowwhatyoudownload.com",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [ "http://iknowwhatyoudownload.com/*" ],
+      "js": [ "btdigg_links.user.js" ],
+	  "run_at": "document_end"
+    }
+  ]
+} 
